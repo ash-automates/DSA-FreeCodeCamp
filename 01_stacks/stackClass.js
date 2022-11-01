@@ -15,9 +15,9 @@ const Stack = function () {
     if (this.count === 0) {
       return undefined;
     }
-    this.count -= 1;
     const result = this.storage[this.count - 1];
     delete this.storage[this.count - 1];
+    this.count -= 1;
     return result;
   };
 
@@ -26,3 +26,5 @@ const Stack = function () {
     return result;
   };
 };
+
+module.exports = Stack;
