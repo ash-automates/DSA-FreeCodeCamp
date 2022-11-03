@@ -20,4 +20,8 @@ const Queue = function () {
   this.size = function () {
     return collection.length;
   };
+
+  this.isEmpty = function () {
+    return this.size() === 0;
+  };
 };
